@@ -22,7 +22,7 @@ library(leafem)
 library(viridisLite)
 library(ggthemes)
 library(hrbrthemes)
-library(plotly)
+#library(plotly)
 library(DT)
 ```
 
@@ -325,7 +325,7 @@ Cantidad de especies de félidos en los cantones de Costa Rica
 
 # 15 cantones con mayor riqueza de especies de félidos
 
-grafico_ggplot2 <-
+#grafico_ggplot2 <-
 cantones_union_riqueza |>
   st_drop_geometry() |>
   slice_max(riqueza_especies_felidos, n = 15) |>
@@ -338,7 +338,7 @@ cantones_union_riqueza |>
   ylab("Cantidad de especies") +
   theme_economist()
 
-ggplotly(grafico_ggplot2) |> config(locale = 'es')
+#ggplotly(grafico_ggplot2) |> config(locale = 'es')
 ```
 
 #### Tabla
